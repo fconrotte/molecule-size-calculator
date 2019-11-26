@@ -14,18 +14,25 @@
     <main>
         <div class="card">
             <div class="container">
-                <h1>Gender</h1>
+                <h1 class="h1-header">BMI calculator</h1>
                 <form action="">
-                    <button type="select"> <i class="fas fa-male"></i> Male</button>
-                    <button type="select"> <i class="fas fa-female"></i> Female</button>
+                    
 
 
                     <h2>Weight</h2>
-                    <input type="number" placeholder="75kg">
+                    <input class="weight" type="number" placeholder="70kg">
 
                     <h2>Height</h2>
-                    <input type="number" placeholder="180cm">
+                    <input class="height" type="number" placeholder="175cm">
+
+                    <input class="reset" type="reset" value="Clear">
                 </form>
+
+                <div class="bmi">
+                    Your BMI: <h4 class="result"></h4> 
+                    <span>Healthy Weight (BMI 18.5 to 24.9)</span>
+                </div>
+                
             </div>
         </div>
     </main>
