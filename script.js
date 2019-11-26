@@ -3,12 +3,7 @@ const heightInput = document.querySelector('.height');
 const result = document.querySelector('.result');
 
 
-
-
-
-   
-    
-    heightInput.addEventListener('input', function() {
+        heightInput.addEventListener('input', function() {
         const heightValue = heightInput.value;
         const weightValue = weightInput.value;
        
