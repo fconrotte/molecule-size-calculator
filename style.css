@@ -132,3 +132,69 @@ form input::placeholder{
     
     
 }
+
+
+@media (max-width: 760px) {
+
+    .card {
+        width: 430px;
+    }
+
+    .card h1 {
+        font-size: 0.7rem;
+    }
+
+    .card h2 {
+        font-size: 0.7rem;
+    }
+
+    .height,
+    .weight{
+        font-size: 1rem;
+        width: 220px;
+        margin-left: 115px;
+        border-bottom: 2px solid white;
+    }
+
+    form input::placeholder{
+        font-size: 0.8rem;
+        color: #facec0;
+    }
+
+    .bmi {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 0.8rem;
+        font-weight: 700;
+        color: #fff;
+    }
+
+    .reset {
+        width: 130px;
+        height: 30px;
+        border-radius: 30px;
+        font-size: 0.7rem;
+        opacity: 1;
+        margin-left: 155px;
+        margin-top: 25px;
+    }
+
+    .reset:hover{
+        width: 130px;
+        height: 30px;
+        border-radius: 30px;
+        font-size: 0.7rem;
+        opacity: 1;
+        margin-left: 155px;
+        margin-top: 25px;
+
+    }
+
+    .bmi span {
+        font-size: 0.7rem;
+    }
+
+    .bmi h4 {
+        font-size: 0.8rem;
+    }
+}
