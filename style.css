@@ -136,8 +136,13 @@ form input::placeholder{
 
 @media (max-width: 760px) {
 
+    body {
+        overflow: hidden;
+    }
     .card {
         width: 430px;
+        height: 100vh;
+        
     }
 
     .card h1 {
@@ -167,6 +172,7 @@ form input::placeholder{
         font-size: 0.8rem;
         font-weight: 700;
         color: #fff;
+       
     }
 
     .reset {
@@ -175,7 +181,7 @@ form input::placeholder{
         border-radius: 30px;
         font-size: 0.7rem;
         opacity: 1;
-        margin-left: 155px;
+        margin-left: 150px;
         margin-top: 25px;
     }
 
@@ -185,7 +191,7 @@ form input::placeholder{
         border-radius: 30px;
         font-size: 0.7rem;
         opacity: 1;
-        margin-left: 155px;
+        margin-left: 150px;
         margin-top: 25px;
 
     }
