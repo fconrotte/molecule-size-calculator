@@ -1,7 +1,7 @@
-const weightInput = document.querySelector('.weight');
-const heightInput = document.querySelector('.height');
-const result = document.querySelector('.result');
-const clrBtn = document.querySelector('.reset');
+const weightInput = document.querySelector('#weight');
+const heightInput = document.querySelector('#height');
+const result = document.querySelector('#result');
+const clrBtn = document.querySelector('#reset');
 
 
 
@@ -13,8 +13,8 @@ heightInput.addEventListener('input', function() {
     const bmi = weightValue / Math.pow(heightValue / 10, 2) * 100;
 
     if (heightValue.toString().length === 3) {
-            result.innerHTML = (bmi.toFixed(1));
-        }
+        result.innerHTML = (bmi.toFixed(1));
+    };
             
             
             
@@ -23,8 +23,8 @@ heightInput.addEventListener('input', function() {
     console.log(bmi);
 });
 
-clrBtn.addEventListener('click', function() {
-    result.innerHTML = "";
+    clrBtn.addEventListener('click', function() {
+        result.innerHTML = "";
 });
 
 
