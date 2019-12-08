@@ -14,7 +14,8 @@ heightInput.addEventListener('input', function() {
 
     if (heightValue.toString().length === 3) {
         result.innerHTML = (bmi.toFixed(1));
-    };
+    }
+    
             
             
             
@@ -23,8 +24,20 @@ heightInput.addEventListener('input', function() {
     console.log(bmi);
 });
 
-    clrBtn.addEventListener('click', function() {
-        result.innerHTML = "";
+
+weightInput.addEventListener('input', function() {
+    const heightValue = heightInput.value;
+    const weightValue = weightInput.value;
+    const bmi = weightValue / Math.pow(heightValue / 10, 2) * 100;
+
+    if (weightValue.toString().length === 2 && heightValue.toString().length === 3) {
+        result.innerHTML = (bmi.toFixed(1));
+    } 
+});
+
+
+clrBtn.addEventListener('click', function() {
+    result.innerHTML = "";
 });
 
 
