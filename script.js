@@ -8,8 +8,8 @@ oildropdiameterInput.addEventListener('input', function() {
     const oildropdiameterValue = oildropdiameterInput.value;
     
     // h = 4/3 (drop diameter/2)³ / (puddle diameter/2)²
-	
-    const moleculesize = (4/3 * Math.pow(oildropdiameterValue/2,3)) / Math.pow(oilpuddlediameterValue*10/2,2);	
+    
+    const moleculesize = (4/3 * Math.pow(oildropdiameterValue/2,3)) / Math.pow(oilpuddlediameterValue*10/2,2);  
 
     if (oildropdiameterValue >= 1 && oildropdiameterValue <=10) {
         result.innerHTML = (moleculesize.toFixed(1));
@@ -19,7 +19,7 @@ oildropdiameterInput.addEventListener('input', function() {
         }
     }
     else
-	{
+    {
         result.innerHTML = "Incorrect oil drop diameter (min 1mm, max 10mm)"
     }
 
@@ -32,14 +32,14 @@ oildropdiameterInput.addEventListener('input', function() {
 oilpuddlediameterInput.addEventListener('input', function() {
     const oilpuddlediameterValue = oilpuddlediameterInput.value;
     const oildropdiameterValue = oildropdiameterInput.value;
-	
-	const moleculesize = (4/3 * Math.pow(oildropdiameterValue/2,3)) / Math.pow(oilpuddlediameterValue*10/2,2);	
+    
+    const moleculesize = (4/3 * Math.pow(oildropdiameterValue/2,3)) / Math.pow(oilpuddlediameterValue*10/2,2);  
 
     if (oilpuddlediameterValue >=1 && oilpuddlediameterValue <= 30) {
         result.innerHTML = (moleculesize.toFixed(1));
     }
     else
-	{
+    {
         result.innerHTML = "Incorrect oil puddle diameter (min 1cm, max 30cm)"
     }
 
