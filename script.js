@@ -44,7 +44,7 @@ oilpuddlediameterInput.addEventListener('input', function() {
     }
 
     if (oilpuddlediameterValue.toString().length === 0) {
-        result.innerHTML = "Enter your oilpuddlediameter";
+        result.innerHTML = "Enter the oil puddle diameter";
     }
 });
 
