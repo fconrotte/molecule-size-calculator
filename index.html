@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>BMI calculator</title>
+    <title>Molecule size calculator</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,20 +13,19 @@
         <div class="card">
             <div class="container">
 
-                <h1>BMI calculator</h1>
+                <h1>Molecule size calculator</h1>
                 <form>
-                    <label for="weight"><h2>Weight</h2></label>
-                    <input id="weight" type="number" placeholder="70kg">
+                    <label for="oildropdiameter"><h2>Oil drop diameter (mm)</h2></label>
+                    <input id="oildropdiameter" type="number" placeholder="2mm">
 
-                    <label for="height"><h2>Height</h2></label>
-                    <input id="height" type="number" placeholder="175cm">
+                    <label for="oilpuddlediameter"><h2>Oil puddle diameter (cm)</h2></label>
+                    <input id="oilpuddlediameter" type="number" placeholder="10cm">
 
                     <input class="reset-btn" id="reset" type="reset" value="Clear">
                 </form>
 
-                <div class="bmi">
-                    Your BMI: <h4 id="result"></h4> 
-                    <span>Healthy Weight (BMI 18.5 to 24.9)</span>
+                <div class="moleculesize">
+                    The size of the oil molecule is: <h4 id="result"></h4> 
                 </div>
                 
             </div>
