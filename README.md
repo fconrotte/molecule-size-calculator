@@ -1,5 +1,5 @@
-# bmi-calculator
+# molecule size calculator
 
-pretty simple live BMI calculator created in HTML, CSS, JS
+pretty simple estimation of a molecule size following Benjamin Franklin's oil drop experiment
 
-live: https://destris01.github.io/bmi-calculator/
+live: https://fconrotte.github.io/molecule-size-calculator/
