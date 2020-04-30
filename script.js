@@ -1,70 +1,55 @@
-const weightInput = document.querySelector('#weight');
-const heightInput = document.querySelector('#height');
+const oildropdiameterInput = document.querySelector('#oildropdiameter');
+const oilpuddlediameterInput = document.querySelector('#oilpuddlediameter');
 const result = document.querySelector('#result');
 const clrBtn = document.querySelector('#reset');
 
 
+oildropdiameterInput.addEventListener('input', function() {
+    const oilpuddlediameterValue = oilpuddlediameterInput.value;
+    const oildropdiameterValue = oildropdiameterInput.value;
+    
+	// h = 4/3 (drop diameter/2)³ / (puddle diameter/2)²
+	
+	const moleculesize = (4/3 * Math.pow(oildropdiameterValue/2,3)) / Math.pow(oilpuddlediameterValue*10/2,2);	
 
-
-weightInput.addEventListener('input', function() {
-    const heightValue = heightInput.value;
-    const weightValue = weightInput.value;
-    const bmi = weightValue / Math.pow(heightValue / 10, 2) * 100;
-
-    if (weightValue >= 30  &&  weightValue <=200) {
+    if (oildropdiameterValue >= 100 && oildropdiameterValue <=1) {
         
-        result.innerHTML = (bmi.toFixed(1));
+        result.innerHTML = (moleculesize.toFixed(1));
 
         if (result.innerHTML = Infinity) {
-            result.innerHTML = "Enter your height";
+            result.innerHTML = "Enter the oil puddle diameter";
         }
-                
+    }
+    else
+	{
+        result.innerHTML = "Incorrect oil drop diameter (min 30, max 200)"
     }
 
-    
-    else {
-        result.innerHTML = "Uncorrect weight (min 30, max 200)"
-    }
-
-    if (weightValue.toString().length === 0) {
-        result.innerHTML = "Enter your weight";
+    if (oildropdiameterValue.toString().length === 0) {
+        result.innerHTML = "Enter the oil drop diameter";
     }
 });
 
 
-heightInput.addEventListener('input', function() {
-    const heightValue = heightInput.value;
-    const weightValue = weightInput.value;
-    const bmi = weightValue / Math.pow(heightValue / 10, 2) * 100;
+oilpuddlediameterInput.addEventListener('input', function() {
+    const oilpuddlediameterValue = oilpuddlediameterInput.value;
+    const oildropdiameterValue = oildropdiameterInput.value;
+	
+	const moleculesize = (4/3 * Math.pow(oildropdiameterValue/2,3)) / Math.pow(oilpuddlediameterValue*10/2,2);	
 
-    if (heightValue >=120 && heightValue <=230) {
-        result.innerHTML = (bmi.toFixed(1));
+    if (oilpuddlediameterValue >=1 && oilpuddlediameterValue <= 30) {
+        result.innerHTML = (moleculesize.toFixed(1));
+    }
+    else
+	{
+        result.innerHTML = "Incorrect oil puddle diameter (min 1, max 30)"
     }
 
-    else {
-        result.innerHTML = "Uncorrect height (min 120, max 230)"
+    if (oilpuddlediameterValue.toString().length === 0) {
+        result.innerHTML = "Enter your oilpuddlediameter";
     }
-
-    if (heightValue.toString().length === 0) {
-        result.innerHTML = "Enter your height";
-
-        
-    }
-    
-                   
-    
 });
-
-
-
-
 
 clrBtn.addEventListener('click', function() {
     result.innerHTML = "";
 });
-
-
-
-
-
-
