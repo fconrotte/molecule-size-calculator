@@ -12,7 +12,7 @@ oildropdiameterInput.addEventListener('input', function() {
     const moleculesize = (4/3 * Math.pow(oildropdiameterValue/2,3)) / Math.pow(oilpuddlediameterValue*10/2,2);  
 
     if (oildropdiameterValue >= 1 && oildropdiameterValue <=10) {
-        result.innerHTML = (moleculesize.toFixed(1));
+        result.innerHTML = (moleculesize.toFixed(10));
 
         if (result.innerHTML = Infinity) {
             result.innerHTML = "Enter the oil puddle diameter";
@@ -36,7 +36,7 @@ oilpuddlediameterInput.addEventListener('input', function() {
     const moleculesize = (4/3 * Math.pow(oildropdiameterValue/2,3)) / Math.pow(oilpuddlediameterValue*10/2,2);  
 
     if (oilpuddlediameterValue >=1 && oilpuddlediameterValue <= 30) {
-        result.innerHTML = (moleculesize.toFixed(1));
+        result.innerHTML = (moleculesize.toFixed(10));
     }
     else
     {
